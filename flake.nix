@@ -2,7 +2,8 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     zmk = {
-      url = "github:moergo-sc/zmk";
+      # Per key/layer RGB underglow
+      url = "github:moergo-sc/zmk/pull/36/head";
       flake = false;
     };
   };
