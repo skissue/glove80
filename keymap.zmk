@@ -4422,7 +4422,9 @@ macros {
   //
   #ifndef UNICODE_SEQ_LINUX
   #define UNICODE_SEQ_LINUX(keystrokes) \
-    <&macro_tap &kp LC(LS(U)) keystrokes &kp ENTER>
+    <&macro_press &kp LC(LSHFT)>, \
+    <&macro_tap &kp U keystrokes>, \
+    <&macro_release &kp LC(LSHFT)>
   #endif
 
   //
