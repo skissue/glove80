@@ -9,6 +9,7 @@
   };
 
   outputs = {
+    self,
     nixpkgs,
     zmk,
     ...
@@ -16,8 +17,8 @@
     system = "x86_64-linux";
     pkgs = import nixpkgs {inherit system;};
     firmware = import zmk {inherit pkgs;};
-    keymap = ./keymap.zmk;
-    kconfig = ./glove80.conf;
+    keymap = "${self}/keymap.zmk";
+    kconfig = "${self}/glove80.conf";
     override = orig: orig.override {inherit keymap kconfig;};
     glove80 = with firmware;
       combine_uf2 (override glove80_left) (override glove80_right);
