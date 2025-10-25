@@ -5,7 +5,7 @@
 //#define SPACE_FORGIVENESS  // allow lingering taps on the space bar
 //#define THUMB_FORGIVENESS  // allow lingering taps on the thumb keys
 //#define SHIFT_FORGIVENESS  // requires v24.08-beta or newer firmware
-//#define ENABLE_MOUSE_KEYS  // requires HID_POINTING override to "y"
+#define ENABLE_MOUSE_KEYS  // requires HID_POINTING override to "y"
 //#define NATURAL_SCROLLING  // supports "natural scrolling" in macOS
 //#define WORLD_USE_COMPOSE  // use native Compose in place of Unicode
 //#define WORLD_HOST_AZERTY  // host computer is set to AZERTY locale
@@ -3547,7 +3547,9 @@ macros {
   //
   #ifndef UNICODE_SEQ_LINUX
   #define UNICODE_SEQ_LINUX(keystrokes) \
-    <&macro_tap &kp LC(LS(U)) keystrokes &kp ENTER>
+    <&macro_press &kp LC(LSFT)>, \
+    <&macro_tap &kp U keystrokes &kp ENTER>, \
+    <&macro_release &kp LC(LSFT)>
   #endif
 
   //

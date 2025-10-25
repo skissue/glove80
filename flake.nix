@@ -27,5 +27,8 @@
       inherit glove80;
       default = glove80;
     };
+    devShells.${system}.default = pkgs.mkShell {
+      buildInputs = with pkgs; [rake ruby graphviz graphicsmagick poppler-utils];
+    };
   };
 }
