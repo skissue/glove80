@@ -3783,6 +3783,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_section_sign_macro, /* § */
     #if OPERATING_SYSTEM == 'L'
@@ -3819,6 +3820,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_paragraph_sign_macro, /* ¶ */
     #if OPERATING_SYSTEM == 'L'
@@ -3855,6 +3857,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_ordinal_macro, /* º */
     #if OPERATING_SYSTEM == 'L'
@@ -3891,6 +3894,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_ordinal_macro, /* ª */
     #if OPERATING_SYSTEM == 'L'
@@ -3927,6 +3931,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_exclaim_left_macro, /* ¡ */
     #if OPERATING_SYSTEM == 'L'
@@ -3963,6 +3968,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_question_left_macro, /* ¿ */
     #if OPERATING_SYSTEM == 'L'
@@ -3999,6 +4005,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_currency_crypto_macro, /* ₿ */
     #if OPERATING_SYSTEM == 'L'
@@ -4020,6 +4027,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_currency_cent_macro, /* ¢ */
     #if OPERATING_SYSTEM == 'L'
@@ -4041,6 +4049,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_currency_sign_macro, /* ¤ */
     #if OPERATING_SYSTEM == 'L'
@@ -4062,6 +4071,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_micro_sign_macro, /* µ */
     #if OPERATING_SYSTEM == 'L'
@@ -4098,6 +4108,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
 
   //
@@ -4138,6 +4149,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_i_acute_upper_macro, /* Í */
     #if OPERATING_SYSTEM == 'L'
@@ -4174,12 +4186,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_i_acute: world_i_acute {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_i_acute_lower>, <&world_i_acute_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_i_diaeresis_lower_macro, /* ï */
     #if OPERATING_SYSTEM == 'L'
@@ -4216,6 +4230,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_i_diaeresis_upper_macro, /* Ï */
     #if OPERATING_SYSTEM == 'L'
@@ -4252,12 +4267,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_i_diaeresis: world_i_diaeresis {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_i_diaeresis_lower>, <&world_i_diaeresis_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_i_circumflex_lower_macro, /* î */
     #if OPERATING_SYSTEM == 'L'
@@ -4294,6 +4311,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_i_circumflex_upper_macro, /* Î */
     #if OPERATING_SYSTEM == 'L'
@@ -4330,12 +4348,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_i_circumflex: world_i_circumflex {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_i_circumflex_lower>, <&world_i_circumflex_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_i_grave_lower_macro, /* ì */
     #if OPERATING_SYSTEM == 'L'
@@ -4372,6 +4392,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_i_grave_upper_macro, /* Ì */
     #if OPERATING_SYSTEM == 'L'
@@ -4408,12 +4429,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_i_grave: world_i_grave {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_i_grave_lower>, <&world_i_grave_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_acute_lower_macro, /* é */
     #if OPERATING_SYSTEM == 'L'
@@ -4450,6 +4473,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_acute_upper_macro, /* É */
     #if OPERATING_SYSTEM == 'L'
@@ -4486,12 +4510,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_acute: world_e_acute {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_acute_lower>, <&world_e_acute_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_diaeresis_lower_macro, /* ë */
     #if OPERATING_SYSTEM == 'L'
@@ -4528,6 +4554,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_diaeresis_upper_macro, /* Ë */
     #if OPERATING_SYSTEM == 'L'
@@ -4564,12 +4591,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_diaeresis: world_e_diaeresis {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_diaeresis_lower>, <&world_e_diaeresis_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_circumflex_lower_macro, /* ê */
     #if OPERATING_SYSTEM == 'L'
@@ -4606,6 +4635,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_circumflex_upper_macro, /* Ê */
     #if OPERATING_SYSTEM == 'L'
@@ -4642,12 +4672,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_circumflex: world_e_circumflex {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_circumflex_lower>, <&world_e_circumflex_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_grave_lower_macro, /* è */
     #if OPERATING_SYSTEM == 'L'
@@ -4684,6 +4716,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_grave_upper_macro, /* È */
     #if OPERATING_SYSTEM == 'L'
@@ -4720,12 +4753,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_grave: world_e_grave {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_grave_lower>, <&world_e_grave_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_oe_lower_macro, /* œ */
     #if OPERATING_SYSTEM == 'L'
@@ -4762,6 +4797,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_oe_upper_macro, /* Œ */
     #if OPERATING_SYSTEM == 'L'
@@ -4798,12 +4834,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_oe: world_e_oe {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_oe_lower>, <&world_e_oe_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_ae_lower_macro, /* æ */
     #if OPERATING_SYSTEM == 'L'
@@ -4840,6 +4878,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_e_ae_upper_macro, /* Æ */
     #if OPERATING_SYSTEM == 'L'
@@ -4876,12 +4915,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_ae: world_e_ae {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_ae_lower>, <&world_e_ae_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_acute_lower_macro, /* á */
     #if OPERATING_SYSTEM == 'L'
@@ -4918,6 +4959,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_acute_upper_macro, /* Á */
     #if OPERATING_SYSTEM == 'L'
@@ -4954,12 +4996,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_acute: world_a_acute {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_acute_lower>, <&world_a_acute_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_diaeresis_lower_macro, /* ä */
     #if OPERATING_SYSTEM == 'L'
@@ -4996,6 +5040,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_diaeresis_upper_macro, /* Ä */
     #if OPERATING_SYSTEM == 'L'
@@ -5032,12 +5077,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_diaeresis: world_a_diaeresis {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_diaeresis_lower>, <&world_a_diaeresis_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_circumflex_lower_macro, /* â */
     #if OPERATING_SYSTEM == 'L'
@@ -5074,6 +5121,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_circumflex_upper_macro, /* Â */
     #if OPERATING_SYSTEM == 'L'
@@ -5110,12 +5158,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_circumflex: world_a_circumflex {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_circumflex_lower>, <&world_a_circumflex_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_grave_lower_macro, /* à */
     #if OPERATING_SYSTEM == 'L'
@@ -5152,6 +5202,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_grave_upper_macro, /* À */
     #if OPERATING_SYSTEM == 'L'
@@ -5188,12 +5239,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_grave: world_a_grave {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_grave_lower>, <&world_a_grave_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_tilde_lower_macro, /* ã */
     #if OPERATING_SYSTEM == 'L'
@@ -5230,6 +5283,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_tilde_upper_macro, /* Ã */
     #if OPERATING_SYSTEM == 'L'
@@ -5266,12 +5320,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_tilde: world_a_tilde {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_tilde_lower>, <&world_a_tilde_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_ring_lower_macro, /* å */
     #if OPERATING_SYSTEM == 'L'
@@ -5308,6 +5364,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_a_ring_upper_macro, /* Å */
     #if OPERATING_SYSTEM == 'L'
@@ -5344,12 +5401,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_ring: world_a_ring {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_ring_lower>, <&world_a_ring_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_y_acute_lower_macro, /* ý */
     #if OPERATING_SYSTEM == 'L'
@@ -5386,6 +5445,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_y_acute_upper_macro, /* Ý */
     #if OPERATING_SYSTEM == 'L'
@@ -5422,12 +5482,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_y_acute: world_y_acute {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_y_acute_lower>, <&world_y_acute_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_y_diaeresis_lower_macro, /* ÿ */
     #if OPERATING_SYSTEM == 'L'
@@ -5464,6 +5526,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_y_diaeresis_upper_macro, /* Ÿ */
     #if OPERATING_SYSTEM == 'L'
@@ -5500,12 +5563,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_y_diaeresis: world_y_diaeresis {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_y_diaeresis_lower>, <&world_y_diaeresis_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_acute_lower_macro, /* ó */
     #if OPERATING_SYSTEM == 'L'
@@ -5542,6 +5607,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_acute_upper_macro, /* Ó */
     #if OPERATING_SYSTEM == 'L'
@@ -5578,12 +5644,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_acute: world_o_acute {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_acute_lower>, <&world_o_acute_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_diaeresis_lower_macro, /* ö */
     #if OPERATING_SYSTEM == 'L'
@@ -5620,6 +5688,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_diaeresis_upper_macro, /* Ö */
     #if OPERATING_SYSTEM == 'L'
@@ -5656,12 +5725,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_diaeresis: world_o_diaeresis {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_diaeresis_lower>, <&world_o_diaeresis_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_circumflex_lower_macro, /* ô */
     #if OPERATING_SYSTEM == 'L'
@@ -5698,6 +5769,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_circumflex_upper_macro, /* Ô */
     #if OPERATING_SYSTEM == 'L'
@@ -5734,12 +5806,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_circumflex: world_o_circumflex {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_circumflex_lower>, <&world_o_circumflex_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_grave_lower_macro, /* ò */
     #if OPERATING_SYSTEM == 'L'
@@ -5776,6 +5850,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_grave_upper_macro, /* Ò */
     #if OPERATING_SYSTEM == 'L'
@@ -5812,12 +5887,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_grave: world_o_grave {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_grave_lower>, <&world_o_grave_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_tilde_lower_macro, /* õ */
     #if OPERATING_SYSTEM == 'L'
@@ -5854,6 +5931,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_tilde_upper_macro, /* Õ */
     #if OPERATING_SYSTEM == 'L'
@@ -5890,12 +5968,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_tilde: world_o_tilde {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_tilde_lower>, <&world_o_tilde_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_slash_lower_macro, /* ø */
     #if OPERATING_SYSTEM == 'L'
@@ -5932,6 +6012,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_o_slash_upper_macro, /* Ø */
     #if OPERATING_SYSTEM == 'L'
@@ -5968,12 +6049,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_slash: world_o_slash {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_slash_lower>, <&world_o_slash_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_u_acute_lower_macro, /* ú */
     #if OPERATING_SYSTEM == 'L'
@@ -6010,6 +6093,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_u_acute_upper_macro, /* Ú */
     #if OPERATING_SYSTEM == 'L'
@@ -6046,12 +6130,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_u_acute: world_u_acute {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_u_acute_lower>, <&world_u_acute_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_u_diaeresis_lower_macro, /* ü */
     #if OPERATING_SYSTEM == 'L'
@@ -6088,6 +6174,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_u_diaeresis_upper_macro, /* Ü */
     #if OPERATING_SYSTEM == 'L'
@@ -6124,12 +6211,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_u_diaeresis: world_u_diaeresis {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_u_diaeresis_lower>, <&world_u_diaeresis_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_u_circumflex_lower_macro, /* û */
     #if OPERATING_SYSTEM == 'L'
@@ -6166,6 +6255,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_u_circumflex_upper_macro, /* Û */
     #if OPERATING_SYSTEM == 'L'
@@ -6202,12 +6292,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_u_circumflex: world_u_circumflex {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_u_circumflex_lower>, <&world_u_circumflex_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_u_grave_lower_macro, /* ù */
     #if OPERATING_SYSTEM == 'L'
@@ -6244,6 +6336,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_u_grave_upper_macro, /* Ù */
     #if OPERATING_SYSTEM == 'L'
@@ -6280,12 +6373,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_u_grave: world_u_grave {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_u_grave_lower>, <&world_u_grave_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_consonants_cedilla_lower_macro, /* ç */
     #if OPERATING_SYSTEM == 'L'
@@ -6322,6 +6417,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_consonants_cedilla_upper_macro, /* Ç */
     #if OPERATING_SYSTEM == 'L'
@@ -6358,12 +6454,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_consonants_cedilla: world_consonants_cedilla {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_consonants_cedilla_lower>, <&world_consonants_cedilla_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_consonants_eszett_lower_macro, /* ß */
     #if OPERATING_SYSTEM == 'L'
@@ -6400,6 +6498,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_consonants_eszett_upper_macro, /* ẞ */
     #if OPERATING_SYSTEM == 'L'
@@ -6431,12 +6530,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_consonants_eszett: world_consonants_eszett {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_consonants_eszett_lower>, <&world_consonants_eszett_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_consonants_ntilde_lower_macro, /* ñ */
     #if OPERATING_SYSTEM == 'L'
@@ -6473,6 +6574,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_consonants_ntilde_upper_macro, /* Ñ */
     #if OPERATING_SYSTEM == 'L'
@@ -6509,12 +6611,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_consonants_ntilde: world_consonants_ntilde {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_consonants_ntilde_lower>, <&world_consonants_ntilde_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_angle_lower_macro, /* ‹ */
     #if OPERATING_SYSTEM == 'L'
@@ -6536,6 +6640,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_angle_upper_macro, /* « */
     #if OPERATING_SYSTEM == 'L'
@@ -6557,12 +6662,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_angle: world_quotes_left_angle {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_angle_lower>, <&world_quotes_left_angle_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_curly_lower_macro, /* ‘ */
     #if OPERATING_SYSTEM == 'L'
@@ -6584,6 +6691,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_curly_upper_macro, /* “ */
     #if OPERATING_SYSTEM == 'L'
@@ -6605,12 +6713,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_curly: world_quotes_left_curly {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_curly_lower>, <&world_quotes_left_curly_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_low_lower_macro, /* ‚ */
     #if OPERATING_SYSTEM == 'L'
@@ -6632,6 +6742,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_low_upper_macro, /* „ */
     #if OPERATING_SYSTEM == 'L'
@@ -6653,12 +6764,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_low: world_quotes_left_low {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_low_lower>, <&world_quotes_left_low_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_corner1_lower_macro, /* 「 */
     #if OPERATING_SYSTEM == 'L'
@@ -6680,6 +6793,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_corner1_upper_macro, /* ﹁ */
     #if OPERATING_SYSTEM == 'L'
@@ -6701,12 +6815,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_corner1: world_quotes_left_corner1 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_corner1_lower>, <&world_quotes_left_corner1_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_corner2_lower_macro, /* 『 */
     #if OPERATING_SYSTEM == 'L'
@@ -6728,6 +6844,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_corner2_upper_macro, /* ﹃ */
     #if OPERATING_SYSTEM == 'L'
@@ -6749,12 +6866,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_corner2: world_quotes_left_corner2 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_corner2_lower>, <&world_quotes_left_corner2_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_left_grave_macro, /* ` */
     #if OPERATING_SYSTEM == 'L'
@@ -6776,6 +6895,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_right_angle_lower_macro, /* › */
     #if OPERATING_SYSTEM == 'L'
@@ -6797,6 +6917,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_right_angle_upper_macro, /* » */
     #if OPERATING_SYSTEM == 'L'
@@ -6818,12 +6939,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_angle: world_quotes_right_angle {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_angle_lower>, <&world_quotes_right_angle_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_right_curly_lower_macro, /* ’ */
     #if OPERATING_SYSTEM == 'L'
@@ -6845,6 +6968,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_right_curly_upper_macro, /* ” */
     #if OPERATING_SYSTEM == 'L'
@@ -6866,18 +6990,21 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_curly: world_quotes_right_curly {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_curly_lower>, <&world_quotes_right_curly_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_low: world_quotes_right_low {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_low_lower>, <&world_quotes_left_low_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_right_corner1_lower_macro, /* 」 */
     #if OPERATING_SYSTEM == 'L'
@@ -6899,6 +7026,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_right_corner1_upper_macro, /* ﹂ */
     #if OPERATING_SYSTEM == 'L'
@@ -6920,12 +7048,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_corner1: world_quotes_right_corner1 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_corner1_lower>, <&world_quotes_right_corner1_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_right_corner2_lower_macro, /* 』 */
     #if OPERATING_SYSTEM == 'L'
@@ -6947,6 +7077,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_right_corner2_upper_macro, /* ﹄ */
     #if OPERATING_SYSTEM == 'L'
@@ -6968,12 +7099,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_corner2: world_quotes_right_corner2 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_corner2_lower>, <&world_quotes_right_corner2_upper>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_quotes_right_grave_macro, /* ´ */
     #if OPERATING_SYSTEM == 'L'
@@ -6995,6 +7128,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_currency_dollar_lower_macro, /* $ */
     #if OPERATING_SYSTEM == 'L'
@@ -7016,12 +7150,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_currency_dollar: world_currency_dollar {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_currency_dollar_lower>, <&world_currency_cent>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_currency_yen_macro, /* ¥ */
     #if OPERATING_SYSTEM == 'L'
@@ -7043,6 +7179,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_currency_euro_macro, /* € */
     #if OPERATING_SYSTEM == 'L'
@@ -7079,6 +7216,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_currency_won_macro, /* ₩ */
     #if OPERATING_SYSTEM == 'L'
@@ -7100,6 +7238,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_currency_pound_macro, /* £ */
     #if OPERATING_SYSTEM == 'L'
@@ -7121,12 +7260,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_currency_generic: world_currency_generic {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_currency_sign>, <&world_currency_crypto>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_sign_copyright_regular_macro, /* © */
     #if OPERATING_SYSTEM == 'L'
@@ -7163,6 +7304,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_sign_copyright_shifted_macro, /* ® */
     #if OPERATING_SYSTEM == 'L'
@@ -7199,12 +7341,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_sign_copyright: world_sign_copyright {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_sign_copyright_regular>, <&world_sign_copyright_shifted>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_sign_trademark_regular_macro, /* ™ */
     #if OPERATING_SYSTEM == 'L'
@@ -7241,6 +7385,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(world_sign_trademark_shifted_macro, /* ℠ */
     #if OPERATING_SYSTEM == 'L'
@@ -7267,12 +7412,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_sign_trademark: world_sign_trademark {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_sign_trademark_regular>, <&world_sign_trademark_shifted>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
 
   //
@@ -7283,312 +7430,364 @@ UNICODE_MORPH_MODS
     #binding-cells = <0>;
     bindings = <&world_i_acute>, <&world_i_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_i_LCTL: world_i_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_i_diaeresis>, <&world_i_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_i_RCTL: world_i_RCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_i_circumflex>, <&world_i_grave>;
     mods = <(MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_base: world_e_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_acute>, <&world_e_LALT>;
     mods = <(MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_LALT: world_e_LALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_oe>, <&world_e_RALT>;
     mods = <(MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_RALT: world_e_RALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_ae>, <&world_e_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_LCTL: world_e_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_diaeresis>, <&world_e_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_RCTL: world_e_RCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_circumflex>, <&world_e_RSFT>;
     mods = <(MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_RSFT: world_e_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_grave>, <&world_e_LCTL_RSFT>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_e_LCTL_RSFT: world_e_LCTL_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_e_oe>, <&world_e_ae>;
     mods = <(MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_base: world_a_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_acute>, <&world_a_LALT>;
     mods = <(MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_LALT: world_a_LALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_tilde>, <&world_a_RALT>;
     mods = <(MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_RALT: world_a_RALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_ring>, <&world_a_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_LCTL: world_a_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_diaeresis>, <&world_a_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_RCTL: world_a_RCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_circumflex>, <&world_a_RSFT>;
     mods = <(MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_RSFT: world_a_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_grave>, <&world_a_LCTL_RSFT>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_a_LCTL_RSFT: world_a_LCTL_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_a_tilde>, <&world_a_ring>;
     mods = <(MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_y_base: world_y_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_y_acute>, <&world_y_diaeresis>;
     mods = <(MOD_LCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_base: world_o_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_acute>, <&world_o_LALT>;
     mods = <(MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_LALT: world_o_LALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_tilde>, <&world_o_RALT>;
     mods = <(MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_RALT: world_o_RALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_slash>, <&world_o_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_LCTL: world_o_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_diaeresis>, <&world_o_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_RCTL: world_o_RCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_circumflex>, <&world_o_RSFT>;
     mods = <(MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_RSFT: world_o_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_grave>, <&world_o_LCTL_RSFT>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_o_LCTL_RSFT: world_o_LCTL_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_o_tilde>, <&world_o_slash>;
     mods = <(MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_u_base: world_u_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_u_acute>, <&world_u_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_u_LCTL: world_u_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_u_diaeresis>, <&world_u_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_u_RCTL: world_u_RCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_u_circumflex>, <&world_u_grave>;
     mods = <(MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_consonants_base: world_consonants_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_consonants_cedilla>, <&world_consonants_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_consonants_LCTL: world_consonants_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_consonants_ntilde>, <&world_consonants_eszett>;
     mods = <(MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_base: world_quotes_left_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_angle>, <&world_quotes_left_LALT>;
     mods = <(MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_LALT: world_quotes_left_LALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_corner1>, <&world_quotes_left_RALT>;
     mods = <(MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_RALT: world_quotes_left_RALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_corner2>, <&world_quotes_left_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_LCTL: world_quotes_left_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_curly>, <&world_quotes_left_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_RCTL: world_quotes_left_RCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_low>, <&world_quotes_left_RSFT>;
     mods = <(MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_RSFT: world_quotes_left_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_grave>, <&world_quotes_left_LCTL_RSFT>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_left_LCTL_RSFT: world_quotes_left_LCTL_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_left_corner1>, <&world_quotes_left_corner2>;
     mods = <(MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_base: world_quotes_right_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_angle>, <&world_quotes_right_LALT>;
     mods = <(MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_LALT: world_quotes_right_LALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_corner1>, <&world_quotes_right_RALT>;
     mods = <(MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_RALT: world_quotes_right_RALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_corner2>, <&world_quotes_right_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_LCTL: world_quotes_right_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_curly>, <&world_quotes_right_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_RCTL: world_quotes_right_RCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_low>, <&world_quotes_right_RSFT>;
     mods = <(MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_RSFT: world_quotes_right_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_grave>, <&world_quotes_right_LCTL_RSFT>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_quotes_right_LCTL_RSFT: world_quotes_right_LCTL_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_quotes_right_corner1>, <&world_quotes_right_corner2>;
     mods = <(MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_currency_base: world_currency_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_currency_dollar>, <&world_currency_LALT>;
     mods = <(MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_currency_LALT: world_currency_LALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_currency_yen>, <&world_currency_RALT>;
     mods = <(MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_currency_RALT: world_currency_RALT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_currency_won>, <&world_currency_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_currency_LCTL: world_currency_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_currency_euro>, <&world_currency_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_currency_RCTL: world_currency_RCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_currency_pound>, <&world_currency_RSFT>;
     mods = <(MOD_RSFT)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_currency_RSFT: world_currency_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_currency_generic>, <&world_currency_LCTL_RSFT>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_currency_LCTL_RSFT: world_currency_LCTL_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_currency_yen>, <&world_currency_won>;
     mods = <(MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
   world_sign_base: world_sign_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&world_sign_copyright>, <&world_sign_trademark>;
     mods = <(MOD_LCTL)>;
+    keep-mods = <(MOD_LSFT)>;
   };
 
   //////////////////////////////////////////////////////////////////////////
@@ -7659,6 +7858,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_male_sign_macro, /* ♂️ */
     #if OPERATING_SYSTEM == 'L'
@@ -7680,6 +7880,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_female_sign_macro, /* ♀️ */
     #if OPERATING_SYSTEM == 'L'
@@ -7701,6 +7902,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_right_arrow_macro, /* ➡️ */
     #if OPERATING_SYSTEM == 'L'
@@ -7722,6 +7924,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_left_arrow_macro, /* ⬅️ */
     #if OPERATING_SYSTEM == 'L'
@@ -7743,6 +7946,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_rainbow_macro, /* 🌈 */
     #if OPERATING_SYSTEM == 'L'
@@ -7764,6 +7968,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_cloudy_macro, /* ️☁️ */
     #if OPERATING_SYSTEM == 'L'
@@ -7785,6 +7990,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_mostly_cloudy_macro, /* 🌥 */
     #if OPERATING_SYSTEM == 'L'
@@ -7806,6 +8012,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_partly_cloudy_macro, /* ⛅ */
     #if OPERATING_SYSTEM == 'L'
@@ -7827,6 +8034,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_mostly_sunny_macro, /* ️🌤️ */
     #if OPERATING_SYSTEM == 'L'
@@ -7848,6 +8056,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_sunny_macro, /* ☀️ */
     #if OPERATING_SYSTEM == 'L'
@@ -7869,6 +8078,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_sunrise_macro, /* 🌅 */
     #if OPERATING_SYSTEM == 'L'
@@ -7890,6 +8100,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_sunrise_mountains_macro, /* 🌄 */
     #if OPERATING_SYSTEM == 'L'
@@ -7911,6 +8122,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_cityscape_macro, /* ️🏙️ */
     #if OPERATING_SYSTEM == 'L'
@@ -7932,6 +8144,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_cityscape_dusk_macro, /* ️🌇 */
     #if OPERATING_SYSTEM == 'L'
@@ -7953,6 +8166,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_cityscape_night_macro, /* 🌃 */
     #if OPERATING_SYSTEM == 'L'
@@ -7974,6 +8188,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_light_skin_tone_macro, /* 🏻 */
     #if OPERATING_SYSTEM == 'L'
@@ -7995,6 +8210,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_medium_light_skin_tone_macro, /* 🏼 */
     #if OPERATING_SYSTEM == 'L'
@@ -8016,6 +8232,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_medium_skin_tone_macro, /* 🏽 */
     #if OPERATING_SYSTEM == 'L'
@@ -8037,6 +8254,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_medium_dark_skin_tone_macro, /* 🏾 */
     #if OPERATING_SYSTEM == 'L'
@@ -8058,6 +8276,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_dark_skin_tone_macro, /* 🏿 */
     #if OPERATING_SYSTEM == 'L'
@@ -8079,6 +8298,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_baby_bottle_macro, /* 🍼 */
     #if OPERATING_SYSTEM == 'L'
@@ -8100,6 +8320,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_baby_macro, /* 👶 */
     #if OPERATING_SYSTEM == 'L'
@@ -8121,6 +8342,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_boy_macro, /* 👦 */
     #if OPERATING_SYSTEM == 'L'
@@ -8142,6 +8364,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_girl_macro, /* 👧 */
     #if OPERATING_SYSTEM == 'L'
@@ -8163,6 +8386,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_man_macro, /* 👨 */
     #if OPERATING_SYSTEM == 'L'
@@ -8184,6 +8408,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_woman_macro, /* 👩 */
     #if OPERATING_SYSTEM == 'L'
@@ -8205,6 +8430,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_old_man_macro, /* 👴 */
     #if OPERATING_SYSTEM == 'L'
@@ -8226,6 +8452,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_old_woman_macro, /* 👵 */
     #if OPERATING_SYSTEM == 'L'
@@ -8247,6 +8474,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_white_hair_macro, /* 🦳 */
     #if OPERATING_SYSTEM == 'L'
@@ -8268,6 +8496,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_curly_hair_macro, /* 🦱 */
     #if OPERATING_SYSTEM == 'L'
@@ -8289,6 +8518,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_red_hair_macro, /* 🦰 */
     #if OPERATING_SYSTEM == 'L'
@@ -8310,6 +8540,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_bald_macro, /* 🦲 */
     #if OPERATING_SYSTEM == 'L'
@@ -8331,6 +8562,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_new_moon_macro, /* 🌑 */
     #if OPERATING_SYSTEM == 'L'
@@ -8352,6 +8584,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_waxing_crescent_moon_macro, /* 🌒 */
     #if OPERATING_SYSTEM == 'L'
@@ -8373,6 +8606,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_first_quarter_moon_macro, /* 🌓 */
     #if OPERATING_SYSTEM == 'L'
@@ -8394,6 +8628,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_waxing_gibbous_moon_macro, /* 🌔 */
     #if OPERATING_SYSTEM == 'L'
@@ -8415,6 +8650,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_full_moon_macro, /* 🌕 */
     #if OPERATING_SYSTEM == 'L'
@@ -8436,6 +8672,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_waning_gibbous_moon_macro, /* 🌖 */
     #if OPERATING_SYSTEM == 'L'
@@ -8457,6 +8694,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_last_quarter_moon_macro, /* 🌗 */
     #if OPERATING_SYSTEM == 'L'
@@ -8478,6 +8716,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_waning_crescent_moon_macro, /* 🌘 */
     #if OPERATING_SYSTEM == 'L'
@@ -8499,6 +8738,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_tada_macro, /* 🎉 */
     #if OPERATING_SYSTEM == 'L'
@@ -8520,6 +8760,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_heart_macro, /* ️❤️ */
     #if OPERATING_SYSTEM == 'L'
@@ -8541,6 +8782,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_fire_macro, /* 🔥 */
     #if OPERATING_SYSTEM == 'L'
@@ -8562,6 +8804,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_muscle_macro, /* 💪 */
     #if OPERATING_SYSTEM == 'L'
@@ -8583,6 +8826,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_person_climbing_macro, /* 🧗 */
     #if OPERATING_SYSTEM == 'L'
@@ -8604,6 +8848,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_lab_coat_macro, /* 🥼 */
     #if OPERATING_SYSTEM == 'L'
@@ -8625,6 +8870,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_rocket_macro, /* 🚀 */
     #if OPERATING_SYSTEM == 'L'
@@ -8646,6 +8892,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_joy_macro, /* 😂 */
     #if OPERATING_SYSTEM == 'L'
@@ -8667,6 +8914,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_rofl_macro, /* 🤣 */
     #if OPERATING_SYSTEM == 'L'
@@ -8688,6 +8936,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_star_struck_macro, /* 🤩 */
     #if OPERATING_SYSTEM == 'L'
@@ -8709,6 +8958,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_love_struck_macro, /* 😍 */
     #if OPERATING_SYSTEM == 'L'
@@ -8730,6 +8980,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_saluting_face_macro, /* 🫡 */
     #if OPERATING_SYSTEM == 'L'
@@ -8751,6 +9002,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_shocked_face_macro, /* 🤯 */
     #if OPERATING_SYSTEM == 'L'
@@ -8772,6 +9024,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_cold_sweat_macro, /* 😰 */
     #if OPERATING_SYSTEM == 'L'
@@ -8793,6 +9046,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_monocle_face_macro, /* 🧐 */
     #if OPERATING_SYSTEM == 'L'
@@ -8814,6 +9068,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_snap_fingers_macro, /* 🫰 */
     #if OPERATING_SYSTEM == 'L'
@@ -8835,6 +9090,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_ok_hand_macro, /* 👌 */
     #if OPERATING_SYSTEM == 'L'
@@ -8856,6 +9112,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_pray_macro, /* 🙏 */
     #if OPERATING_SYSTEM == 'L'
@@ -8877,6 +9134,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_sweat_smile_macro, /* 😅 */
     #if OPERATING_SYSTEM == 'L'
@@ -8898,6 +9156,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_disappointed_macro, /* 😞 */
     #if OPERATING_SYSTEM == 'L'
@@ -8919,6 +9178,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_thinking_macro, /* 🤔 */
     #if OPERATING_SYSTEM == 'L'
@@ -8940,6 +9200,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_person_tipping_hand_macro, /* 💁 */
     #if OPERATING_SYSTEM == 'L'
@@ -8961,6 +9222,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_person_gesturing_ok_macro, /* 🙆 */
     #if OPERATING_SYSTEM == 'L'
@@ -8982,6 +9244,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_person_bowing_macro, /* 🙇 */
     #if OPERATING_SYSTEM == 'L'
@@ -9003,6 +9266,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_person_raising_hand_macro, /* 🙋 */
     #if OPERATING_SYSTEM == 'L'
@@ -9024,6 +9288,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_person_gesturing_no_macro, /* 🙅 */
     #if OPERATING_SYSTEM == 'L'
@@ -9045,6 +9310,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_person_shrugging_macro, /* 🤷 */
     #if OPERATING_SYSTEM == 'L'
@@ -9066,6 +9332,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_check_macro, /* ✅ */
     #if OPERATING_SYSTEM == 'L'
@@ -9087,6 +9354,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_100_macro, /* 💯 */
     #if OPERATING_SYSTEM == 'L'
@@ -9108,6 +9376,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_warning_macro, /* ⚠️ */
     #if OPERATING_SYSTEM == 'L'
@@ -9129,6 +9398,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_cross_macro, /* ❌ */
     #if OPERATING_SYSTEM == 'L'
@@ -9150,6 +9420,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_question_macro, /* ❓ */
     #if OPERATING_SYSTEM == 'L'
@@ -9171,6 +9442,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_astronaut_macro, /* 🧑‍🚀 */
     #if OPERATING_SYSTEM == 'L'
@@ -9192,6 +9464,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_nerd_macro, /* 🤓 */
     #if OPERATING_SYSTEM == 'L'
@@ -9213,6 +9486,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_sparkles_macro, /* ✨ */
     #if OPERATING_SYSTEM == 'L'
@@ -9234,6 +9508,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_raised_hands_macro, /* 🙌 */
     #if OPERATING_SYSTEM == 'L'
@@ -9255,6 +9530,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_point_up_macro, /* ☝️ */
     #if OPERATING_SYSTEM == 'L'
@@ -9276,6 +9552,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_thumbs_up_macro, /* 👍 */
     #if OPERATING_SYSTEM == 'L'
@@ -9297,6 +9574,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
 
   //
@@ -9307,24 +9585,28 @@ UNICODE_MORPH_MODS
     #binding-cells = <0>;
     bindings = <&emoji_new_moon>, <&emoji_full_moon>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_moon_gibbous: emoji_moon_gibbous {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_waning_gibbous_moon>, <&emoji_waxing_gibbous_moon>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_moon_quarter: emoji_moon_quarter {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_last_quarter_moon>, <&emoji_first_quarter_moon>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_moon_crescent: emoji_moon_crescent {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_waning_crescent_moon>, <&emoji_waxing_crescent_moon>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_face_smile_up_macro, /* 🙂 */
     #if OPERATING_SYSTEM == 'L'
@@ -9346,6 +9628,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_face_smile_down_macro, /* 🙃 */
     #if OPERATING_SYSTEM == 'L'
@@ -9367,24 +9650,28 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_face_smile: emoji_face_smile {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_face_smile_up>, <&emoji_face_smile_down>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_face_laugh: emoji_face_laugh {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_joy>, <&emoji_rofl>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_face_eyes: emoji_face_eyes {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_star_struck>, <&emoji_love_struck>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_face_joke_wink_macro, /* 😉 */
     #if OPERATING_SYSTEM == 'L'
@@ -9406,6 +9693,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_face_joke_tongue_macro, /* 😜 */
     #if OPERATING_SYSTEM == 'L'
@@ -9427,12 +9715,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_face_joke: emoji_face_joke {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_face_joke_wink>, <&emoji_face_joke_tongue>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_face_fear_scared_macro, /* 😨 */
     #if OPERATING_SYSTEM == 'L'
@@ -9454,6 +9744,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_face_fear_scream_macro, /* 😱 */
     #if OPERATING_SYSTEM == 'L'
@@ -9475,12 +9766,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_face_fear: emoji_face_fear {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_face_fear_scared>, <&emoji_face_fear_scream>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_face_surprise_dizzy_macro, /* 😵 */
     #if OPERATING_SYSTEM == 'L'
@@ -9502,12 +9795,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_face_surprise: emoji_face_surprise {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_shocked_face>, <&emoji_face_surprise_dizzy>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_gesture_attention_wave_macro, /* 👋 */
     #if OPERATING_SYSTEM == 'L'
@@ -9529,12 +9824,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_gesture_attention: emoji_gesture_attention {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_snap_fingers>, <&emoji_gesture_attention_wave>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_gesture_approval_cool_macro, /* 😎 */
     #if OPERATING_SYSTEM == 'L'
@@ -9556,24 +9853,28 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_gesture_approval: emoji_gesture_approval {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_ok_hand>, <&emoji_gesture_approval_cool>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_gesture_gratitude: emoji_gesture_gratitude {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_pray>, <&emoji_saluting_face>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_gesture_anxiety: emoji_gesture_anxiety {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_sweat_smile>, <&emoji_cold_sweat>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_gesture_despair_cry_macro, /* 😢 */
     #if OPERATING_SYSTEM == 'L'
@@ -9595,18 +9896,21 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_gesture_despair: emoji_gesture_despair {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_disappointed>, <&emoji_gesture_despair_cry>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_gesture_curious: emoji_gesture_curious {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_thinking>, <&emoji_monocle_face>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_gesture_point_you_macro, /* 🫵 */
     #if OPERATING_SYSTEM == 'L'
@@ -9628,12 +9932,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_gesture_point: emoji_gesture_point {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_point_up>, <&emoji_gesture_point_you>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_gesture_thumbs_down_macro, /* 👎 */
     #if OPERATING_SYSTEM == 'L'
@@ -9655,12 +9961,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_gesture_thumbs: emoji_gesture_thumbs {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_thumbs_up>, <&emoji_gesture_thumbs_down>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_gesture_hands_clap_macro, /* 👏 */
     #if OPERATING_SYSTEM == 'L'
@@ -9682,12 +9990,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_gesture_hands: emoji_gesture_hands {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_raised_hands>, <&emoji_gesture_hands_clap>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_awesome_shine_macro, /* 🌟 */
     #if OPERATING_SYSTEM == 'L'
@@ -9709,12 +10019,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_awesome: emoji_theme_awesome {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_sparkles>, <&emoji_theme_awesome_shine>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_magic_wand_macro, /* 🪄 */
     #if OPERATING_SYSTEM == 'L'
@@ -9736,6 +10048,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_magic_wizard_macro, /* 🧙 */
     #if OPERATING_SYSTEM == 'L'
@@ -9757,24 +10070,28 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_magic: emoji_theme_magic {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_theme_magic_wand>, <&emoji_theme_magic_wizard>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_space: emoji_theme_space {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_rocket>, <&emoji_astronaut>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_science: emoji_theme_science {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_nerd>, <&emoji_lab_coat>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_strength_lifting_macro, /* 🏋️ */
     #if OPERATING_SYSTEM == 'L'
@@ -9796,12 +10113,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_strength: emoji_theme_strength {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_muscle>, <&emoji_theme_strength_lifting>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_effort_juggle_macro, /* 🤹 */
     #if OPERATING_SYSTEM == 'L'
@@ -9823,12 +10142,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_effort: emoji_theme_effort {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_person_climbing>, <&emoji_theme_effort_juggle>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_nature_water_macro, /* 🌊 */
     #if OPERATING_SYSTEM == 'L'
@@ -9850,12 +10171,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_nature: emoji_theme_nature {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_fire>, <&emoji_theme_nature_water>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_love_heart_macro, /* ❤️ */
     #if OPERATING_SYSTEM == 'L'
@@ -9877,6 +10200,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_love_face_macro, /* 🥰 */
     #if OPERATING_SYSTEM == 'L'
@@ -9898,12 +10222,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_love: emoji_theme_love {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_theme_love_heart>, <&emoji_theme_love_face>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_party_face_macro, /* 🥳 */
     #if OPERATING_SYSTEM == 'L'
@@ -9925,12 +10251,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_party: emoji_theme_party {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_tada>, <&emoji_theme_party_face>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_game_dart_macro, /* 🎯 */
     #if OPERATING_SYSTEM == 'L'
@@ -9952,6 +10280,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_game_dice_macro, /* 🎲 */
     #if OPERATING_SYSTEM == 'L'
@@ -9973,12 +10302,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_game: emoji_theme_game {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_theme_game_dart>, <&emoji_theme_game_dice>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_trend_up_macro, /* 📈 */
     #if OPERATING_SYSTEM == 'L'
@@ -10000,6 +10331,7 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_trend_down_macro, /* 📉 */
     #if OPERATING_SYSTEM == 'L'
@@ -10021,12 +10353,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_trend: emoji_theme_trend {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_theme_trend_up>, <&emoji_theme_trend_down>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
   UNICODE(emoji_theme_sigh_fail_macro, /* 🤦 */
     #if OPERATING_SYSTEM == 'L'
@@ -10048,12 +10382,14 @@ COMPOSE_MORPH_MODS
 UNICODE_MORPH_MODS
 #endif
 ))>;
+    keep-mods = <(MOD_LSFT)>;
   };
   emoji_theme_sigh: emoji_theme_sigh {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&emoji_person_shrugging>, <&emoji_theme_sigh_fail>;
     mods = <MOD_LSFT>;
+    keep-mods = <(MOD_LSFT)>;
   };
 };
 /*HACK*/};
