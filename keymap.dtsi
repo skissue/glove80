@@ -14,7 +14,7 @@
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// Sunaku's Keymap v42 -- "Glorious Engrammer"
+// Sunaku's Keymap v42-rc7 -- "Glorious Engrammer"
 // - https://github.com/sunaku/glove80-keymaps
 //
 //////////////////////////////////////////////////////////////////////////////
@@ -111,35 +111,34 @@
   #define KEY_RH_C5R2 N0
   #define KEY_RH_C6R2 0
   #define KEY_LH_C6R3 0
-  #define KEY_LH_C5R3 Z
+  #define KEY_LH_C5R3 Q
   #define KEY_LH_C4R3 Y
   #define KEY_LH_C3R3 O
   #define KEY_LH_C2R3 U
   #define KEY_LH_C1R3 EQUAL
-  #define KEY_RH_C1R3 Q
+  #define KEY_RH_C1R3 X
   #define KEY_RH_C2R3 L
   #define KEY_RH_C3R3 D
-  #define KEY_RH_C4R3 P
-  #define KEY_RH_C5R3 X
+  #define KEY_RH_C4R3 W
+  #define KEY_RH_C5R3 Z
   #define KEY_RH_C6R3 0
-  #define KEY_LH_C6R4 W
+  #define KEY_LH_C6R4 B
   #define KEY_LH_C5R4 C
   #define KEY_LH_C4R4 I
   #define KEY_LH_C3R4 A
   #define KEY_LH_C2R4 E
-  #define KEY_LH_C1R4 SEMI
+  #define KEY_LH_C1R4 MINUS
   #define KEY_RH_C1R4 K
   #define KEY_RH_C2R4 H
   #define KEY_RH_C3R4 T
   #define KEY_RH_C4R4 N
   #define KEY_RH_C5R4 S
   #define KEY_RH_C6R4 F
-  #define KEY_LH_C6R5 0
-  #define LAY_LH_C6R5 LAYER_Lower
+  #define KEY_LH_C6R5 LSFT
   #define KEY_LH_C5R5 SQT
-  #define KEY_LH_C4R5 MINUS
-  #define KEY_LH_C3R5 COMMA
-  #define KEY_LH_C2R5 DOT
+  #define KEY_LH_C4R5 COMMA
+  #define KEY_LH_C3R5 DOT
+  #define KEY_LH_C2R5 SEMI
   #define KEY_LH_C1R5 FSLH
   #define KEY_LH_T1 ESC
   #define LAY_LH_T1 LAYER_Function
@@ -152,10 +151,9 @@
   #define KEY_RH_C1R5 J
   #define KEY_RH_C2R5 M
   #define KEY_RH_C3R5 G
-  #define KEY_RH_C4R5 B
+  #define KEY_RH_C4R5 P
   #define KEY_RH_C5R5 V
-  #define KEY_RH_C6R5 0
-  #define LAY_RH_C6R5 LAYER_Lower
+  #define KEY_RH_C6R5 RSFT
   #define KEY_LH_C6R6 0
   #define KEY_LH_C5R6 GRAVE
   #define KEY_LH_C4R6 LBKT
@@ -167,9 +165,9 @@
   #define KEY_LH_T5 TAB
   #define LAY_LH_T5 LAYER_Number
   #define KEY_LH_T6 INSERT
-  #define LAY_LH_T6 LAYER_Typing
+  #define LAY_LH_T6 LAYER_Lower
   #define KEY_RH_T6 DELETE
-  #define LAY_RH_T6 LAYER_Typing
+  #define LAY_RH_T6 LAYER_Lower
   #define KEY_RH_T5 BACKSPACE
   #define LAY_RH_T5 LAYER_Mouse
   #define KEY_RH_T4 R
@@ -228,8 +226,7 @@
   #define KEY_RH_C4R4 S
   #define KEY_RH_C5R4 N
   #define KEY_RH_C6R4 Q
-  #define KEY_LH_C6R5 0
-  #define LAY_LH_C6R5 LAYER_Lower
+  #define KEY_LH_C6R5 LSFT
   #define KEY_LH_C5R5 G
   #define KEY_LH_C4R5 X
   #define KEY_LH_C3R5 J
@@ -248,8 +245,7 @@
   #define KEY_RH_C3R5 M
   #define KEY_RH_C4R5 F
   #define KEY_RH_C5R5 P
-  #define KEY_RH_C6R5 0
-  #define LAY_RH_C6R5 LAYER_Lower
+  #define KEY_RH_C6R5 RSFT
   #define KEY_LH_C6R6 0
   #define KEY_LH_C5R6 GRAVE
   #define KEY_LH_C4R6 LBKT
@@ -261,9 +257,9 @@
   #define KEY_LH_T5 DELETE
   #define LAY_LH_T5 LAYER_Number
   #define KEY_LH_T6 INSERT
-  #define LAY_LH_T6 LAYER_Typing
+  #define LAY_LH_T6 LAYER_Lower
   #define KEY_RH_T6 0
-  #define LAY_RH_T6 LAYER_Typing
+  #define LAY_RH_T6 LAYER_Lower
   #define KEY_RH_T5 TAB
   #define LAY_RH_T5 LAYER_Mouse
   #define KEY_RH_T4 SPACE
@@ -322,8 +318,7 @@
   #define KEY_RH_C4R4 S
   #define KEY_RH_C5R4 N
   #define KEY_RH_C6R4 Q
-  #define KEY_LH_C6R5 0
-  #define LAY_LH_C6R5 LAYER_Lower
+  #define KEY_LH_C6R5 LSFT
   #define KEY_LH_C5R5 G
   #define KEY_LH_C4R5 X
   #define KEY_LH_C3R5 J
@@ -342,8 +337,7 @@
   #define KEY_RH_C3R5 M
   #define KEY_RH_C4R5 F
   #define KEY_RH_C5R5 P
-  #define KEY_RH_C6R5 0
-  #define LAY_RH_C6R5 LAYER_Lower
+  #define KEY_RH_C6R5 RSFT
   #define KEY_LH_C6R6 0
   #define KEY_LH_C5R6 FSLH
   #define KEY_LH_C4R6 LBKT
@@ -354,9 +348,9 @@
   #define KEY_LH_T5 DELETE
   #define LAY_LH_T5 LAYER_Number
   #define KEY_LH_T6 INSERT
-  #define LAY_LH_T6 LAYER_Typing
+  #define LAY_LH_T6 LAYER_Lower
   #define KEY_RH_T6 0
-  #define LAY_RH_T6 LAYER_Typing
+  #define LAY_RH_T6 LAYER_Lower
   #define KEY_RH_T5 TAB
   #define LAY_RH_T5 LAYER_Mouse
   #define KEY_RH_T4 SPACE
@@ -415,8 +409,7 @@
   #define KEY_RH_C4R4 N
   #define KEY_RH_C5R4 S
   #define KEY_RH_C6R4 MINUS
-  #define KEY_LH_C6R5 0
-  #define LAY_LH_C6R5 LAYER_Lower
+  #define KEY_LH_C6R5 LSFT
   #define KEY_LH_C5R5 SEMI
   #define KEY_LH_C4R5 Q
   #define KEY_LH_C3R5 J
@@ -435,8 +428,7 @@
   #define KEY_RH_C3R5 W
   #define KEY_RH_C4R5 V
   #define KEY_RH_C5R5 Z
-  #define KEY_RH_C6R5 0
-  #define LAY_RH_C6R5 LAYER_Lower
+  #define KEY_RH_C6R5 RSFT
   #define KEY_LH_C6R6 0
   #define KEY_LH_C5R6 GRAVE
   #define KEY_LH_C4R6 LBKT
@@ -448,9 +440,9 @@
   #define KEY_LH_T5 DELETE
   #define LAY_LH_T5 LAYER_Number
   #define KEY_LH_T6 INSERT
-  #define LAY_LH_T6 LAYER_Typing
+  #define LAY_LH_T6 LAYER_Lower
   #define KEY_RH_T6 0
-  #define LAY_RH_T6 LAYER_Typing
+  #define LAY_RH_T6 LAYER_Lower
   #define KEY_RH_T5 TAB
   #define LAY_RH_T5 LAYER_Mouse
   #define KEY_RH_T4 SPACE
@@ -509,8 +501,7 @@
   #define KEY_RH_C4R4 I
   #define KEY_RH_C5R4 O
   #define KEY_RH_C6R4 SQT
-  #define KEY_LH_C6R5 0
-  #define LAY_LH_C6R5 LAYER_Lower
+  #define KEY_LH_C6R5 LSFT
   #define KEY_LH_C5R5 Z
   #define KEY_LH_C4R5 X
   #define KEY_LH_C3R5 C
@@ -529,8 +520,7 @@
   #define KEY_RH_C3R5 COMMA
   #define KEY_RH_C4R5 DOT
   #define KEY_RH_C5R5 FSLH
-  #define KEY_RH_C6R5 0
-  #define LAY_RH_C6R5 LAYER_Lower
+  #define KEY_RH_C6R5 RSFT
   #define KEY_LH_C6R6 0
   #define KEY_LH_C5R6 GRAVE
   #define KEY_LH_C4R6 LBKT
@@ -542,9 +532,9 @@
   #define KEY_LH_T5 DELETE
   #define LAY_LH_T5 LAYER_Number
   #define KEY_LH_T6 INSERT
-  #define LAY_LH_T6 LAYER_Typing
+  #define LAY_LH_T6 LAYER_Lower
   #define KEY_RH_T6 0
-  #define LAY_RH_T6 LAYER_Typing
+  #define LAY_RH_T6 LAYER_Lower
   #define KEY_RH_T5 TAB
   #define LAY_RH_T5 LAYER_Mouse
   #define KEY_RH_T4 SPACE
@@ -603,8 +593,7 @@
   #define KEY_RH_C4R4 L
   #define KEY_RH_C5R4 SEMI
   #define KEY_RH_C6R4 SQT
-  #define KEY_LH_C6R5 0
-  #define LAY_LH_C6R5 LAYER_Lower
+  #define KEY_LH_C6R5 LSFT
   #define KEY_LH_C5R5 Z
   #define KEY_LH_C4R5 X
   #define KEY_LH_C3R5 C
@@ -623,8 +612,7 @@
   #define KEY_RH_C3R5 COMMA
   #define KEY_RH_C4R5 DOT
   #define KEY_RH_C5R5 FSLH
-  #define KEY_RH_C6R5 0
-  #define LAY_RH_C6R5 LAYER_Lower
+  #define KEY_RH_C6R5 RSFT
   #define KEY_LH_C6R6 0
   #define KEY_LH_C5R6 GRAVE
   #define KEY_LH_C4R6 LBKT
@@ -636,9 +624,9 @@
   #define KEY_LH_T5 DELETE
   #define LAY_LH_T5 LAYER_Number
   #define KEY_LH_T6 INSERT
-  #define LAY_LH_T6 LAYER_Typing
+  #define LAY_LH_T6 LAYER_Lower
   #define KEY_RH_T6 0
-  #define LAY_RH_T6 LAYER_Typing
+  #define LAY_RH_T6 LAYER_Lower
   #define KEY_RH_T5 TAB
   #define LAY_RH_T5 LAYER_Mouse
   #define KEY_RH_T4 SPACE
@@ -697,8 +685,7 @@
   #define KEY_RH_C4R4 I
   #define KEY_RH_C5R4 O
   #define KEY_RH_C6R4 SQT
-  #define KEY_LH_C6R5 0
-  #define LAY_LH_C6R5 LAYER_Lower
+  #define KEY_LH_C6R5 LSFT
   #define KEY_LH_C5R5 Z
   #define KEY_LH_C4R5 X
   #define KEY_LH_C3R5 C
@@ -717,8 +704,7 @@
   #define KEY_RH_C3R5 COMMA
   #define KEY_RH_C4R5 DOT
   #define KEY_RH_C5R5 FSLH
-  #define KEY_RH_C6R5 0
-  #define LAY_RH_C6R5 LAYER_Lower
+  #define KEY_RH_C6R5 RSFT
   #define KEY_LH_C6R6 0
   #define KEY_LH_C5R6 GRAVE
   #define KEY_LH_C4R6 LBKT
@@ -730,9 +716,9 @@
   #define KEY_LH_T5 DELETE
   #define LAY_LH_T5 LAYER_Number
   #define KEY_LH_T6 INSERT
-  #define LAY_LH_T6 LAYER_Typing
+  #define LAY_LH_T6 LAYER_Lower
   #define KEY_RH_T6 0
-  #define LAY_RH_T6 LAYER_Typing
+  #define LAY_RH_T6 LAYER_Lower
   #define KEY_RH_T5 TAB
   #define LAY_RH_T5 LAYER_Mouse
   #define KEY_RH_T4 SPACE
@@ -762,7 +748,7 @@ combos {
   // (on index finger home + thumb cluster T1) to finish the whole chord.
   //
   #ifndef SHIFT_FIRING_DECAY
-  #define SHIFT_FIRING_DECAY 100
+  #define SHIFT_FIRING_DECAY 50
   #endif
 
   // T2+T3
@@ -783,14 +769,14 @@ combos {
 
   // T1+T2
 
-  combo_sticky_ralt_left {
+  combo_sticky_altgr_left {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_LH_T1 POS_LH_T2>;
     bindings = <&sk RALT>;
     layers = <0 1 2 3 4 5 6>;
   };
 
-  combo_sticky_ralt_right {
+  combo_sticky_altgr_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_RH_T1 POS_RH_T2>;
     bindings = <&sk RALT>;
@@ -807,42 +793,42 @@ combos {
   };
   #endif
 
-  combo_hyper_right {
+  combo_hyper_GACS_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_RH_T1 POS_RH_T4>;
     bindings = <&kp LG(LA(LC(LSHFT)))>;
     layers = <0 1 2 3 4 5 6>;
   };
 
-  // T3+T6
+  // T2+T6
   #if defined(_G_TAB) && defined(LAYER_Cursor)
   combo_win_tab_switcher_left {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_LH_T3 POS_LH_T6>;
+    key-positions = <POS_LH_T2 POS_LH_T6>;
     bindings = <&mod_tab_chord _G_TAB LAYER_Cursor>;
     layers = <0 1 2 3 4 5 6>;
   };
   #endif
 
-  combo_ctrl_shift_right {
+  combo_turbo_CS_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_RH_T3 POS_RH_T6>;
+    key-positions = <POS_RH_T2 POS_RH_T6>;
     bindings = <&kp LC(LSHFT)>;
     layers = <0 1 2 3 4 5 6>;
   };
 
-  // T2+T5
+  // T5+T6
 
   combo_ctrl_tab_switcher_left {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_LH_T2 POS_LH_T5>;
+    key-positions = <POS_LH_T5 POS_LH_T6>;
     bindings = <&mod_tab_chord LCTL LAYER_Cursor>;
     layers = <0 1 2 3 4 5 6>;
   };
 
-  combo_meh_right {
+  combo_meh_ACS_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_RH_T2 POS_RH_T5>;
+    key-positions = <POS_RH_T5 POS_RH_T6>;
     bindings = <&kp LA(LC(LSHFT))>;
     layers = <0 1 2 3 4 5 6>;
   };
@@ -851,14 +837,14 @@ combos {
 
   combo_sticky_shift_left {
     timeout-ms = <SHIFT_FIRING_DECAY>;
-    key-positions = <POS_LH_C2R4 POS_LH_T1>;
+    key-positions = <POS_LH_T1 POS_LH_T4>;
     bindings = <&sticky_key_modtap LSFT LSFT>;
     layers = <0 1 2 3 4 5 6 7>;
   };
 
   combo_sticky_shift_right {
     timeout-ms = <SHIFT_FIRING_DECAY>;
-    key-positions = <POS_RH_C2R4 POS_RH_T1>;
+    key-positions = <POS_RH_T1 POS_RH_T4>;
     bindings = <&sticky_key_modtap RSFT RSFT>;
     layers = <0 1 2 3 4 5 6 7>;
   };
@@ -869,14 +855,14 @@ combos {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_LH_T4 POS_LH_T5>;
     bindings = <&caps_word>;
-    layers = <0 1 2 3 4 5 6>;
+    layers = <0 1 2 3 4 5 6 7>;
   };
 
   combo_caps_word_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_RH_T4 POS_RH_T5>;
     bindings = <&caps_word>;
-    layers = <0 1 2 3 4 5 6>;
+    layers = <0 1 2 3 4 5 6 7>;
   };
 
   // T5+T6
@@ -885,15 +871,32 @@ combos {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_LH_T5 POS_LH_T6>;
     bindings = <&kp CAPSLOCK>;
-    layers = <0 1 2 3 4 5 6>;
+    layers = <0 1 2 3 4 5 6 7>;
   };
 
   combo_caps_lock_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_RH_T5 POS_RH_T6>;
     bindings = <&kp CAPSLOCK>;
-    layers = <0 1 2 3 4 5 6>;
+    layers = <0 1 2 3 4 5 6 7>;
   };
+
+  // T3+T6
+  #ifdef LAYER_Typing
+  combo_typing_layer_access_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T3 POS_LH_T6>;
+    bindings = <&mo LAYER_Typing>;
+    layers = <0 1 2 3 4 5 6 7>;
+  };
+
+  combo_typing_layer_access_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T3 POS_RH_T6>;
+    bindings = <&mo LAYER_Typing>;
+    layers = <0 1 2 3 4 5 6 7>;
+  };
+  #endif
 
   // C1R5+C2R6
   #ifdef LAYER_Gaming
