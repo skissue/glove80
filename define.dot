@@ -11,6 +11,8 @@ digraph settings {
 
     TAPPING_RESOLUTION -> NUMBER_150
 
+    SPACE_HOLDING_TYPE -> "\"tap-preferred\""
+
     RINGY_FINGER_MOD -> LALT
 
     INDEX_FINGER_MOD -> LSFT
@@ -35,11 +37,11 @@ digraph settings {
 
     HOMEY_HOLDING_TIME -> "+90"
 
-    INDEX_HOLDING_TIME -> "+40"
+    INDEX_HOLDING_TIME -> "+30"
 
     MIDDY_HOLDING_TIME -> "+60"
 
-    RINGY_HOLDING_TIME -> "+80"
+    RINGY_HOLDING_TIME -> "+90"
 
     PINKY_HOLDING_TIME -> "+120"
 
@@ -63,7 +65,7 @@ digraph settings {
 
     THUMB_HOLDING_TYPE -> "\"balanced\""
 
-    THUMB_HOLDING_TIME -> "+50"
+    THUMB_HOLDING_TIME -> INDEX_HOLDING_TIME
 
     THUMB_REPEAT_DECAY -> "+150"
 
@@ -526,11 +528,9 @@ digraph settings {
 
   "+90" -> TAPPING_RESOLUTION [color=red]
 
-  "+40" -> TAPPING_RESOLUTION [color=red]
+  "+30" -> TAPPING_RESOLUTION [color=red]
 
   "+60" -> TAPPING_RESOLUTION [color=red]
-
-  "+80" -> TAPPING_RESOLUTION [color=red]
 
   "+120" -> TAPPING_RESOLUTION [color=red]
 
@@ -580,11 +580,9 @@ digraph settings {
     
       "+90" [label="+90", style=filled, fillcolor=salmon, shape=lpromoter]
     
-      "+40" [label="+40", style=filled, fillcolor=salmon, shape=lpromoter]
+      "+30" [label="+30", style=filled, fillcolor=salmon, shape=lpromoter]
     
       "+60" [label="+60", style=filled, fillcolor=salmon, shape=lpromoter]
-    
-      "+80" [label="+80", style=filled, fillcolor=salmon, shape=lpromoter]
     
       "+120" [label="+120", style=filled, fillcolor=salmon, shape=lpromoter]
     
