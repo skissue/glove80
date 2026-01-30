@@ -25,11 +25,11 @@
     "zmk": {
       "flake": false,
       "locked": {
-        "lastModified": 1754248619,
-        "narHash": "sha256-aiSlknIrGFcD2dxXxwnrvgnHZEEESUh9akXHS9lmtn0=",
+        "lastModified": 1768512988,
+        "narHash": "sha256-xh65fnyv1bKGE1pcvWErjU2oP6roGWbQgFHRrJ3Yzcs=",
         "owner": "moergo-sc",
         "repo": "zmk",
-        "rev": "8aeaaa66fbb4b94948c8763e06f1920ab0b69480",
+        "rev": "512f756b3be6a124424c1de295cfa68d86038139",
         "type": "github"
       },
       "original": {
