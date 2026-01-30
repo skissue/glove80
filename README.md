@@ -1,23 +1,22 @@
 # "Glorious Engrammer" keymap for MoErgo Glove80
 
-This is [my Glove80] keymap featuring the [Enthium] and [Engrammer] layouts with
-[Miryoku]-style layers and [home row mods].  Other layouts (**QWERTY**, Dvorak,
-Colemak/DH, etc.) and pinky shifts are also provided to ease your transition.
+This is [my Glove80] keymap featuring the [Enthium] layout with [Miryoku]-style
+layers and [home row mods].  Other layouts (**QWERTY**, Dvorak, and Colemak)
+as well as traditional pinky shifts are also provided to ease your transition.
 
 ![Photograph of my Glove80 with Enthium layout and per-key RGB illumination.](
 README/base-layer-photograph-Enthium.webp )
 
 [my Glove80]:    https://sunaku.github.io/moergo-glove80-keyboard.html
 [Enthium]:       https://sunaku.github.io/enthium-keyboard-layout.html
-[Engrammer]:     https://sunaku.github.io/engrammer-keyboard-layout.html
 [Miryoku]:       https://github.com/manna-harbour/miryoku
 [home row mods]: https://sunaku.github.io/home-row-mods.html
 
 ## Keymap
 
-Version 42-rc8 (PREVIEW)
-- Changes: https://github.com/sunaku/glove80-keymaps/releases/v42-rc8
-- Release: https://my.moergo.com/glove80/#/layout/user/380402b4-66e5-4329-bf74-c3e01df44aa8
+Version 42-rc9 (PREVIEW)
+- Changes: https://github.com/sunaku/glove80-keymaps/releases/v42-rc9
+- Release: https://my.moergo.com/glove80/#/layout/user/2314c452-bfff-4b59-95cf-bdf037ccdaad
 
 ### Legend
 
@@ -284,18 +283,16 @@ by holding the Magic key and tapping the respective number key for that layer.
 | Shortcut  | Layer number | Alpha layout                        |
 | --------- | ------------ | ----------------------------------- |
 | Magic+`=` | 0            | Enthium (base layer; your choice)   |
-| Magic+`1` | 1            | Engrammer                           |
-| Magic+`2` | 2            | ColemakDH                           |
-| Magic+`3` | 3            | Colemak                             |
-| Magic+`4` | 4            | Dvorak                              |
-| Magic+`5` | 5            | QWERTY                              |
+| Magic+`1` | 1            | Colemak                             |
+| Magic+`2` | 2            | Dvorak                              |
+| Magic+`3` | 3            | QWERTY                              |
 
 For the first 5 alpha layouts, the respective number key for each layout will
 illuminate when you tap the Magic key.  For example, suppose that we activate
-the QWERTY layout by typing Magic+`5` and that we've forgotten about it after
+the QWERTY layout by typing Magic+`3` and that we've forgotten about it after
 some time... 😅 how can we know which alpha layout is currently active?  Well,
-by simply tapping the Magic key, we'll see that number 5 illuminates in pink 🚨
-thereby indicating that the QWERTY alpha layout (at layer number 5) is active.
+by simply tapping the Magic key, we'll see that number 3 illuminates in pink 🚨
+thereby indicating that the QWERTY alpha layout (at layer number 3) is active.
 
 However, note that number row illumination isn't available for layer 6 onwards.
 That's just how the Glove80's firmware is currently implemented today; you have

@@ -14,7 +14,7 @@
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// Sunaku's Keymap v42-rc8 -- "Glorious Engrammer"
+// Sunaku's Keymap v42-rc9 -- "Glorious Engrammer"
 // - https://github.com/sunaku/glove80-keymaps
 //
 //////////////////////////////////////////////////////////////////////////////
@@ -172,6 +172,40 @@
   end
 %>
 
+conditional_layers {
+  compatible = "zmk,conditional-layers";
+
+  #ifdef LAYER_macOS
+<%
+  {
+    "left" => %w[ Cursor Number Function ],
+    "right" => %w[ Symbol Mouse System ],
+    "lower" => %w[ Lower ]
+  }
+  .each do |hand, layers|
+    then_layer = "LAYER_macOS_#{hand}"
+%>
+  #ifdef <%= then_layer %>
+  <%
+    layers.each do |layer|
+      if_layer = "LAYER_#{layer}"
+  %>
+    #ifdef <%= if_layer %>
+    if_<%= if_layer %>_then_<%= then_layer %> {
+      if-layers = <LAYER_macOS <%= if_layer %>>;
+      then-layer = <<%= then_layer %>>;
+    };
+    #endif
+  <%
+    end
+  %>
+  #endif
+<%
+  end
+%>
+  #endif
+};
+
 combos {
   compatible = "zmk,combos";
   <%
@@ -231,12 +265,12 @@ combos {
     layers = <<%= alpha_layer_ids %>>;
   };
 
-  // T2+T5
+  // T1+T4
 
   #if defined(_A_TAB) && defined(LAYER_Cursor)
   combo_alt_tab_switcher_left {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_LH_T2 POS_LH_T5>;
+    key-positions = <POS_LH_T1 POS_LH_T4>;
     bindings = <&mod_tab_chord _A_TAB LAYER_Cursor>;
     layers = <<%= alpha_layer_ids %>>;
   };
@@ -244,17 +278,17 @@ combos {
 
   combo_hyper_GACS_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_RH_T2 POS_RH_T5>;
+    key-positions = <POS_RH_T1 POS_RH_T4>;
     bindings = <&kp LG(LA(LC(LSHFT)))>;
     layers = <<%= alpha_layer_ids %>>;
   };
 
-  // T2+T6
+  // T3+T6
 
   #if defined(_G_TAB) && defined(LAYER_Cursor)
   combo_win_tab_switcher_left {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_LH_T2 POS_LH_T6>;
+    key-positions = <POS_LH_T3 POS_LH_T6>;
     bindings = <&mod_tab_chord _G_TAB LAYER_Cursor>;
     layers = <<%= alpha_layer_ids %>>;
   };
@@ -262,39 +296,39 @@ combos {
 
   combo_turbo_CS_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_RH_T2 POS_RH_T6>;
+    key-positions = <POS_RH_T3 POS_RH_T6>;
     bindings = <&kp LC(LSHFT)>;
     layers = <<%= alpha_layer_ids %>>;
   };
 
-  // T3+T6
+  // T2+T5
 
   combo_ctrl_tab_switcher_left {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_LH_T3 POS_LH_T6>;
+    key-positions = <POS_LH_T2 POS_LH_T5>;
     bindings = <&mod_tab_chord LCTL LAYER_Cursor>;
     layers = <<%= alpha_layer_ids %>>;
   };
 
   combo_meh_ACS_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_RH_T3 POS_RH_T6>;
+    key-positions = <POS_RH_T2 POS_RH_T5>;
     bindings = <&kp LA(LC(LSHFT))>;
     layers = <<%= alpha_layer_ids %>>;
   };
 
-  // T1+T4
+  // T1+T5
 
   combo_sticky_shift_left {
     timeout-ms = <SHIFT_FIRING_DECAY>;
-    key-positions = <POS_LH_T1 POS_LH_T4>;
+    key-positions = <POS_LH_T1 POS_LH_T5>;
     bindings = <&sticky_key_modtap LSFT LSFT>;
     layers = <<%= typing_layer_ids %>>;
   };
 
   combo_sticky_shift_right {
     timeout-ms = <SHIFT_FIRING_DECAY>;
-    key-positions = <POS_RH_T1 POS_RH_T4>;
+    key-positions = <POS_RH_T1 POS_RH_T5>;
     bindings = <&sticky_key_modtap RSFT RSFT>;
     layers = <<%= typing_layer_ids %>>;
   };
@@ -315,18 +349,18 @@ combos {
     layers = <<%= typing_layer_ids %>>;
   };
 
-  // T1+T5
+  // T2+T6
 
   combo_caps_lock_left {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_LH_T1 POS_LH_T5>;
+    key-positions = <POS_LH_T2 POS_LH_T6>;
     bindings = <&kp CAPSLOCK>;
     layers = <<%= typing_layer_ids %>>;
   };
 
   combo_caps_lock_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_RH_T1 POS_RH_T5>;
+    key-positions = <POS_RH_T2 POS_RH_T6>;
     bindings = <&kp CAPSLOCK>;
     layers = <<%= typing_layer_ids %>>;
   };
@@ -356,7 +390,7 @@ combos {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_LH_C1R5 POS_LH_C2R6>;
     bindings = <&tog LAYER_Gaming>;
-    layers = <0 LAYER_Gaming>;
+    layers = <0 LAYER_macOS LAYER_Gaming>;
   };
   #endif
 
@@ -365,7 +399,7 @@ combos {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_RH_C1R5 POS_RH_C2R6>;
     bindings = <&tog LAYER_Typing>;
-    layers = <0 LAYER_Typing>;
+    layers = <0 LAYER_macOS LAYER_Typing>;
   };
   #endif
 
@@ -687,7 +721,7 @@ behaviors {
   // a thumb key to activate a layer.  Shorter holds are treated as taps.
   //
   <%
-    emit_setting_ifndef.(:THUMB_HOLDING_TIME, :INDEX_HOLDING_TIME)
+    emit_setting_ifndef.(:THUMB_HOLDING_TIME, resolve_tap_timing.(200))
   %>
 
   //
@@ -1987,19 +2021,11 @@ macros {
 #endif
 
 //
-// MOUSE_SCALER_FINE sets parameters for the &zip_xy_scaler input processor:
-// https://zmk.dev/docs/keymaps/input-processors/scaler
-//
-#ifndef MOUSE_SCALER_FINE
-#define MOUSE_SCALER_FINE 1 16
-#endif
-
-//
 // MOUSE_SCALER_SLOW sets parameters for the &zip_xy_scaler input processor:
 // https://zmk.dev/docs/keymaps/input-processors/scaler
 //
 #ifndef MOUSE_SCALER_SLOW
-#define MOUSE_SCALER_SLOW 1 4
+#define MOUSE_SCALER_SLOW 1 16
 #endif
 
 //
@@ -2042,28 +2068,22 @@ macros {
   //
   #include <input/processors.dtsi>
   &mmv_input_listener {
-    #ifdef LAYER_MouseFine
-    fine {
-      layers = <LAYER_MouseFine>;
-      input-processors = <&zip_xy_scaler MOUSE_SCALER_FINE>;
-    };
-    #endif
     #ifdef LAYER_MouseSlow
     slow {
       layers = <LAYER_MouseSlow>;
       input-processors = <&zip_xy_scaler MOUSE_SCALER_SLOW>;
     };
     #endif
-    #ifdef LAYER_MouseFast
-    fast {
-      layers = <LAYER_MouseFast>;
-      input-processors = <&zip_xy_scaler MOUSE_SCALER_FAST>;
-    };
-    #endif
     #ifdef LAYER_MouseWarp
     warp {
       layers = <LAYER_MouseWarp>;
       input-processors = <&zip_xy_scaler MOUSE_SCALER_WARP>;
+    };
+    #endif
+    #ifdef LAYER_MouseFast
+    fast {
+      layers = <LAYER_MouseFast>;
+      input-processors = <&zip_xy_scaler MOUSE_SCALER_FAST>;
     };
     #endif
   };
@@ -2084,28 +2104,22 @@ macros {
     };
   };
   &msc_input_listener {
-    #ifdef LAYER_MouseFine
-    fine {
-      layers = <LAYER_MouseFine>;
-      input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_FINE>;
-    };
-    #endif
     #ifdef LAYER_MouseSlow
     slow {
       layers = <LAYER_MouseSlow>;
       input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_SLOW>;
     };
     #endif
-    #ifdef LAYER_MouseFast
-    fast {
-      layers = <LAYER_MouseFast>;
-      input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_FAST>;
-    };
-    #endif
     #ifdef LAYER_MouseWarp
     warp {
       layers = <LAYER_MouseWarp>;
       input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_WARP>;
+    };
+    #endif
+    #ifdef LAYER_MouseFast
+    fast {
+      layers = <LAYER_MouseFast>;
+      input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_FAST>;
     };
     #endif
   };
