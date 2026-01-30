@@ -1387,9 +1387,7 @@ macros {
   //
   #ifndef UNICODE_SEQ_LINUX
   #define UNICODE_SEQ_LINUX(keystrokes) \
-    <&macro_press &kp LC(LSFT)>, \
-    <&macro_tap &kp U keystrokes &kp ENTER>, \
-    <&macro_release &kp LC(LSFT)>
+    <&macro_tap &kp LC(LS(U)) keystrokes &kp ENTER>
   #endif
 
   //
@@ -1621,7 +1619,6 @@ macros {
     #binding-cells = <0>;
     bindings = <&<%= plain %>>, <&<%= morphed %>>;
     mods = <<%= modifiers %>>;
-    keep-mods = <(MOD_LSFT)>;
   };
   <%
     end
