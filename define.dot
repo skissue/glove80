@@ -515,7 +515,7 @@ digraph settings {
 
     MOUSE_MOTION_TIME_TO_MAXIMUM_SPEED -> NUMBER_300
 
-    MOUSE_MOTION_MAXIMUM_SPEED -> NUMBER_600
+    MOUSE_MOTION_MAXIMUM_SPEED -> NUMBER_200
 
     MOUSE_SCROLL_DELAY -> NUMBER_0
 
@@ -524,6 +524,20 @@ digraph settings {
     MOUSE_SCROLL_TIME_TO_MAXIMUM_SPEED -> NUMBER_300
 
     MOUSE_SCROLL_MAXIMUM_SPEED -> NUMBER_10
+
+    THUMB_MOUSE_SCROLL_SPEED -> NUMBER_33
+
+    MOUSE_MOTION_SCALER_SLOW -> "1 12"
+
+    MOUSE_MOTION_SCALER_FAST -> "4 1"
+
+    MOUSE_MOTION_SCALER_WARP -> "12 1"
+
+    MOUSE_SCROLL_SCALER_SLOW -> "1 9"
+
+    MOUSE_SCROLL_SCALER_FAST -> "3 1"
+
+    MOUSE_SCROLL_SCALER_WARP -> "9 1"
 
 
   "+90" -> TAPPING_RESOLUTION [color=red]
@@ -558,6 +572,18 @@ digraph settings {
     
       "'N'" [label="'N'", style=filled, fillcolor=cyan, shape=signature]
     
+      "1 12" [label="1 12", style=filled, fillcolor=cyan, shape=signature]
+    
+      "4 1" [label="4 1", style=filled, fillcolor=cyan, shape=signature]
+    
+      "12 1" [label="12 1", style=filled, fillcolor=cyan, shape=signature]
+    
+      "1 9" [label="1 9", style=filled, fillcolor=cyan, shape=signature]
+    
+      "3 1" [label="3 1", style=filled, fillcolor=cyan, shape=signature]
+    
+      "9 1" [label="9 1", style=filled, fillcolor=cyan, shape=signature]
+    
 
     
       NUMBER_50 [label="50", style=filled, fillcolor=yellow, shape=signature]
@@ -574,7 +600,9 @@ digraph settings {
     
       NUMBER_300 [label="300", style=filled, fillcolor=yellow, shape=signature]
     
-      NUMBER_600 [label="600", style=filled, fillcolor=yellow, shape=signature]
+      NUMBER_200 [label="200", style=filled, fillcolor=yellow, shape=signature]
+    
+      NUMBER_33 [label="33", style=filled, fillcolor=yellow, shape=signature]
     
 
     

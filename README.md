@@ -14,9 +14,9 @@ README/base-layer-photograph-Enthium.webp )
 
 ## Keymap
 
-Version 42-rc9 (PREVIEW)
-- Changes: https://github.com/sunaku/glove80-keymaps/releases/v42-rc9
-- Release: https://my.moergo.com/glove80/#/layout/user/2314c452-bfff-4b59-95cf-bdf037ccdaad
+Version 52 (2026-03-01)
+- Changes: https://github.com/sunaku/glove80-keymaps/releases/v52
+- Release: https://my.moergo.com/glove80/#/layout/user/909a8599-903f-44f3-a51e-5130ecdf2999
 
 ### Legend
 
@@ -29,45 +29,55 @@ See [release notes][rel] for a visual overview of recent updates.
 [pdf]: README/all-layer-diagrams.pdf
 [rel]: https://github.com/sunaku/glove80-keymaps/releases
 
-### Contents
+### Community
+
+Join the [`#glorious-engrammer`][ch] channel on [MoErgo's discord][sv].
+
+[ch]: https://discord.com/channels/877392805654306816/1111469812850380831
+[sv]: https://www.moergo.com/discord
+
+### Documentation
+
+>TIP: You can "talk" to this codebase here:
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sunaku/glove80-keymaps)
 
 <!-- vim-markdown-toc GFM -->
 
 * [Guide](#guide)
-  * [Factory layout](#factory-layout)
-  * [Operating system](#operating-system)
-  * [Home row mods](#home-row-mods)
-    * [Difficulty level](#difficulty-level)
-    * [One-shot shifts](#one-shot-shifts)
-    * [Shift forgiveness](#shift-forgiveness)
-    * [Bilateral combinations](#bilateral-combinations)
-  * [Layer access keys](#layer-access-keys)
-  * [Key auto-repeat](#key-auto-repeat)
-  * [Alpha layouts](#alpha-layouts)
-  * [Unicode and Emoji](#unicode-and-emoji)
-    * [OS-native compose](#os-native-compose)
+    * [Factory layout](#factory-layout)
+    * [Operating system](#operating-system)
+    * [Home row mods](#home-row-mods)
+        * [Difficulty level](#difficulty-level)
+        * [One-shot shifts](#one-shot-shifts)
+        * [Shift forgiveness](#shift-forgiveness)
+        * [Bilateral combinations](#bilateral-combinations)
+            * [One-handed shortcuts](#one-handed-shortcuts)
+    * [Layer access keys](#layer-access-keys)
+    * [Key auto-repeat](#key-auto-repeat)
+    * [Alpha layouts](#alpha-layouts)
+    * [Unicode and Emoji](#unicode-and-emoji)
+        * [OS-native compose](#os-native-compose)
 * [Installing](#installing)
-  * [Enabling mouse emulation](#enabling-mouse-emulation)
-    * [Choose a firmware that supports mouse emulation](#choose-a-firmware-that-supports-mouse-emulation)
-  * [Enabling per-key RGB lighting](#enabling-per-key-rgb-lighting)
-  * [Flashing](#flashing)
+    * [Enabling mouse emulation](#enabling-mouse-emulation)
+        * [Choose a firmware that supports mouse emulation](#choose-a-firmware-that-supports-mouse-emulation)
+    * [Enabling per-key RGB lighting](#enabling-per-key-rgb-lighting)
+    * [Flashing](#flashing)
 * [Upgrading](#upgrading)
 * [Customizing](#customizing)
-  * [Overriding the defaults](#overriding-the-defaults)
-    * [Reordering home row mods](#reordering-home-row-mods)
-    * [Fine-tuning the timing](#fine-tuning-the-timing)
-  * [Compiling from source](#compiling-from-source)
-    * [World and Emoji characters](#world-and-emoji-characters)
-      * [Adding a new World character](#adding-a-new-world-character)
-      * [Shift key for World characters](#shift-key-for-world-characters)
-      * [Modifiers for World characters](#modifiers-for-world-characters)
-      * [Compose for World characters](#compose-for-world-characters)
-      * [Adding a new Emoji character](#adding-a-new-emoji-character)
-      * [Shift key for Emoji characters](#shift-key-for-emoji-characters)
-    * [Editing layer map diagrams](#editing-layer-map-diagrams)
-    * [Rearranging the base layer](#rearranging-the-base-layer)
-      * [Mirroring horizontally](#mirroring-horizontally)
-* [Discussion](#discussion)
+    * [Overriding the defaults](#overriding-the-defaults)
+        * [Reordering home row mods](#reordering-home-row-mods)
+        * [Fine-tuning the timing](#fine-tuning-the-timing)
+    * [Compiling from source](#compiling-from-source)
+        * [World and Emoji characters](#world-and-emoji-characters)
+            * [Adding a new World character](#adding-a-new-world-character)
+            * [Shift key for World characters](#shift-key-for-world-characters)
+            * [Modifiers for World characters](#modifiers-for-world-characters)
+            * [Compose for World characters](#compose-for-world-characters)
+            * [Adding a new Emoji character](#adding-a-new-emoji-character)
+            * [Shift key for Emoji characters](#shift-key-for-emoji-characters)
+        * [Editing layer map diagrams](#editing-layer-map-diagrams)
+        * [Rearranging the base layer](#rearranging-the-base-layer)
+            * [Mirroring horizontally](#mirroring-horizontally)
 * [License](#license)
 
 <!-- vim-markdown-toc -->
@@ -241,11 +251,22 @@ In contrast, one-handed shortcuts can be more strenuous as you have to contort
 your hand to hold a modifier _and_ tap modified keys; plus the act of holding a
 modifier limits the hand's range of motion when reaching for keys to be tapped.
 
-Nevertheless, if you still prefer using one-handed shortcuts, you can disable
-bilateral combinations enforcement by removing the `#define ENFORCE_BILATERAL`
-line and, optionally, deleting the bilateral combinations layers in the keymap.
-
 [same-hand chords]: https://sunaku.github.io/home-row-mods.html#same-hand-chords
+
+##### One-handed shortcuts
+
+You can use the Lower layer's _sticky_ home row modifiers to perform one-handed
+shortcuts, bypassing bilateral combinations enforcement, as needed or preferred.
+
+For example, to type the Ctrl+Q shortcut in QWERTY using only the left hand:
+1. Hold LT2 (T2 key on left thumb cluster) to access the Lower layer.
+2. Tap the left hand's C3R4 key (home row modifier for _sticky_ Ctrl).
+3. Release LT2 from step 1 to return to your previously active layer.
+4. Tap Q, which will now be "wrapped" by the _sticky_ Ctrl from step 2.
+
+Alternatively, you can disable bilateral combinations enforcement entirely by
+removing the `#define ENFORCE_BILATERAL` line and then, optionally, deleting
+all of the per-finger bilateral combinations enforcement layers in the keymap.
 
 ### Layer access keys
 
@@ -280,12 +301,12 @@ This keymap lets you dynamically switch to alpha layouts (such as QWERTY and
 Dvorak) other than the one you chose for your base layer during installation,
 by holding the Magic key and tapping the respective number key for that layer.
 
-| Shortcut  | Layer number | Alpha layout                        |
-| --------- | ------------ | ----------------------------------- |
-| Magic+`=` | 0            | Enthium (base layer; your choice)   |
-| Magic+`1` | 1            | Colemak                             |
-| Magic+`2` | 2            | Dvorak                              |
-| Magic+`3` | 3            | QWERTY                              |
+| Shortcut  | Layer number | Alpha layout |
+| --------- | ------------ | ------------ |
+| Magic+`=` | 0            | [Enthium]    |
+| Magic+`1` | 1            | Dvorak       |
+| Magic+`2` | 2            | Colemak      |
+| Magic+`3` | 3            | QWERTY       |
 
 For the first 5 alpha layouts, the respective number key for each layout will
 illuminate when you tap the Magic key.  For example, suppose that we activate
@@ -983,13 +1004,6 @@ mirrored_layout = Object.assign({}, layout);
 mirrored_layout["layers"] = mirrored_layers;
 mirrored_layout; /* dumps to the console for copying */
 ```
-
-## Discussion
-
-Join the [`#glorious-engrammer`][ch] channel on [MoErgo's discord server][sv].
-
-[ch]: https://discord.com/channels/877392805654306816/1111469812850380831
-[sv]: https://www.moergo.com/discord
 
 ## License
 
