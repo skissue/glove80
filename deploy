@@ -3,7 +3,7 @@
 # Build, and then escalate to root
 if [ ! "$UID" -eq 0 ]; then
   nix build || exit
-  exec sudo bash "$0" "$@"
+  exec run0 bash "$0" "$@"
 fi
 echo "Got root privileges..."
 
